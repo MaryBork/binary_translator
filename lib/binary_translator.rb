@@ -28,5 +28,21 @@ class BinaryTranslator
       "y" => "011001",
       "z" => "011010"
     }
+
   end
+
+  def translate(hash_key_input)
+    hash_key_array = []
+    hash_key_string = hash_key_input.downcase
+    hash_key_array << hash_key_string.split
+
+    end
+
+
+
 end
+
+#Input string of characters (.downcase)
+#Turn into array of individual string characters
+#String characters used as hash keys to reveal hash values
+#Translate array back into string of "values"
